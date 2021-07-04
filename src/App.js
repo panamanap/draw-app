@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import Button from './components/Button/Button';
+import Canvas from './components/Canvas/Canvas';
+import s from './App.module.css';
+import { useState } from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = () => {
+
+    const [color, setColor] = useState('black');
+    const [isDrawing, setIsDrawing] = useState(false);
+    const [lineSize, setLineSize] = useState(5);
+    const [show, setShow] = useState(false);
+
+    return (
+        <div className={s.wrapperApp}>
+            <Canvas 
+                color={color} 
+                isDrawing={isDrawing} 
+                setIsDrawing={setIsDrawing}
+                lineSize={lineSize}
+                setLineSize={setLineSize}
+                show={show}
+                setShow={setShow}
+            />
+            <Button setColor={setColor} />        
+        </div>
+    );
 }
 
 export default App;

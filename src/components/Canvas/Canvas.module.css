@@ -1,0 +1,111 @@
+.wrapper {
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.wrapperCanvas {
+    box-sizing: border-box;
+    border: 3px solid hsl(0, 0%, 0%);
+    background-color: hsl(0, 0%, 100%);
+}
+
+.settings {
+    background-color: hsl(240, 60%, 40%);
+    height: 40px;
+    flex-basis: 100px;
+    border: 2px solid hsl(0, 0%, 100%);
+    border-radius: 10px;
+    color: hsl(0, 0%, 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hiddenBtn {
+    display: none;
+}
+
+.settings:hover {
+    transform: scale(1.1);
+}
+
+.settings:active {
+    transform: scale(.9);
+}
+
+
+
+
+ /* Settings.js  */
+
+.rightbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100px;
+}
+
+.wrapperSettings {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.clearBtn {
+    background-color: hsl(240, 60%, 40%);
+    height: 40px;
+    width: 40px;
+    border: 2px solid hsl(0, 0%, 100%);
+    border-radius: 10px;
+    color: hsl(0, 0%, 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:hsl(0, 0%, 100%);
+    align-self: center;
+}
+
+.clearBtn:hover {
+    transform: scale(1.1);
+}
+
+.clearBtn:active {
+    transform: scale(.9);
+}
+
+.wrapperLineSize {
+    margin: 10px;
+    height: 50px;
+    width: 100px;
+    display: flex;
+    justify-content: s;
+    align-items: center;
+}
+
+.lineSize {
+    height: 30px;
+    width: 30px;    
+}
+
+.newSettings {
+    background-color: hsl(240, 60%, 40%);
+    height: 40px;
+    flex-basis: 40px;
+    border: 2px solid hsl(0, 0%, 100%);
+    border-radius: 10px;
+    color: hsl(0, 0%, 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newSettings:hover {
+    transform: scale(1.1);
+}
+
+.newSettings:active {
+    transform: scale(.9);
+}
+
+
